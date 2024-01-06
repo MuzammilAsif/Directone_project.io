@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* getting website theme colors  */
+:root{
+    --bs-primary-color: #ff414d;
+    --bs-secondary-color: #fff;
+    --bs-golden: #daa520;
+    --bs-dark: #10151c;
+}
+body{
+    background-color: whitesmoke;
+}
+
+/* /////////////////////////////// Designing of Navbar ////////////////////////// */
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+.left > .logo{
+    display: flex;
+    align-items: center;
+}
+
+.middle > ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.middle > ul > li a{
+    text-decoration: none;
+    margin: 3px;
+    padding: 6px 12px;
+    font-size: 20px;
+}
+
+.btn-listing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 45px;
+    width: 130px;
+    border-radius: 6px;
+    background-color: var(--bs-primary-color);
+    color: var(--bs-secondary-color);
+}
+/* /////////////////////////////// Designing of Navbar ////////////////////////// */
+
+/* /////////////////////////////// Designing of Main section ////////////////////////// */
+.hero-section{
+    background-image: url('/assets/images/bg_1.jpg.webp');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+/* .hero-section .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .3;
+    background: #000000;
+    z-index: -1;
+} */
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    height: 100%;
+}
+.container > .main-top-head > h1{
+    color: var(--bs-secondary-color);
+    font-size: 4.5rem;
+    line-height: 80px;
+}  
+.container > .main-top-head > p{
+    margin-top: 1%;
+    color: rgb(255, 255, 255);
+}
+
+.main-bottom-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+}
+.main-search{
+    height: 48px;
+    width: 280px;
+    border: .2px solid gray;
+    text-align: center;
+}
+.radius{
+    border-radius: 6px 0px 0px 6px;
+}
+.main-btn{
+    height: 45px;
+    width: 180px;
+    font-style: 18px;
+    cursor: pointer;
+    border: none;
+    color: var(--bs-secondary-color);
+    background-color: var(--bs-primary-color);
+}
+/* /////////////////////////////// Designing of Main section ////////////////////////// */
+
+/* /////////////////////////////// Designing of Boxes section ////////////////////////// */
+.cards{
+   display: grid;
+   justify-content: center;
+   grid-template-columns: repeat(6,200px);
+   grid-template-rows: repeat(2,200px);
+   grid-row-gap: 20px;
+   grid-column-gap: 20px;
+   margin-top: -80px;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    cursor: pointer;
+    position: relative;
+    background-color: var(--bs-secondary-color);
+    border-radius: 4px;
+    transition: all 0.2s linear;
+}
+.box:hover{
+    bottom: 10px;
+    background-color: bisque;
+}
+.box > p > a{
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 1px 8px;
+    color: var(--bs-primary-color);
+    background-color: rgba(0, 0, 0, 0.03);
+}
+/* /////////////////////////////// Designing of Boxes section ////////////////////////// */
+
+/* /////////////////////////////// Designing of Listing section ////////////////////////// */
+.listing-section{
+    margin-top: 4%;
+}
+.top-head{
+    text-align: center;
+}
+.top-head > p{
+    font-size: 18px;
+    color: var(--bs-primary-color);
+}
+.top-head > h1{
+    font-size: 45px;
+    color: rgba(0, 0, 0, 0.8);
+}
+/* making review cards */
+.reviews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+}
+
+/*///////////////////////////// All images of the card is here ///////////////////////////////////*/
+
+.review-card-image-0{
+    background-image: url('/assets/images/review\ cadbg-0.webp');
+    height: 300px;
+    width: 299px;
+    background-size: cover;
+}
+.review-card-image-1{
+    background-image: url('/assets/images/review\ cadbg-1.webp');
+    height: 300px;
+    width: 299px;
+    background-size: cover;
+}
+.review-card-image-2{
+    background-image: url('/assets/images/review\ cadbg-2.webp');
+    height: 300px;
+    width: 299px;
+    background-position: -80px 0;
+    background-size: cover;
+}
+.review-card-image-3{
+    background-image: url('/assets/images/review\ cadbg-3.webp');
+    height: 300px;
+    width: 299px;
+    background-size: cover;
+}
+.review-card-image-4{
+    background-image: url('/assets/images/review\ cadbg-4.webp');
+    height: 300px;
+    width: 299px;
+    background-position: -38px 0;
+    background-size: cover;
+}
+.review-card-image-5{
+    background-image: url('/assets/images/review\ cadbg-5.webp');
+    height: 300px;
+    width: 299px;
+    background-position: -38px 0;
+    background-size: cover;
+}
+.review-card-image-6{
+    background-image: url('/assets/images/review\ cadbg-6.webp');
+    height: 300px;
+    width: 299px;
+    background-size: cover;
+}
+.review-card-image-7{
+    background-image: url('/assets/images/review\ cadbg-7.webp');
+    height: 300px;
+    width: 299px;
+    background-size: cover;
+}
+.review-card-image-8{
+    background-image: url('/assets/images/review\ cadbg-8.webp');
+    height: 300px;
+    width: 299px;
+    background-position: -20px 0;
+    background-size: cover;
+}
+.review-card-image-9{
+    background-image: url('/assets/images/review\ cadbg-9.webp');
+    height: 300px;
+    width: 299px;
+    background-size: cover;
+}
+.review-card-image-10{
+    background-image: url('/assets/images/review\ cadbg-10.webp');
+    height: 300px;
+    width: 299px;
+    background-position: -30px 0;
+    background-size: cover;
+}
+.review-card-image-11{
+    background-image: url('/assets/images/review\ cadbg-11.webp');
+    height: 300px;
+    width: 299px;
+    background-size: cover;
+}
+/*///////////////////////////// All images of the card is here ///////////////////////////////////*/
+
+
+/*////////////////////////// creation of the review cards of the card is here ////////////////////////////////*/
+.review-card{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 480px;
+    width: 300px;
+    margin: 0px 14px;
+    padding-bottom: 10px;
+    background-color: white;
+    transition: all 0.15s linear;
+}
+.review-card:hover{
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0,0.1);
+}
+.review-card > .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 70px;
+    background-color: white;
+    border: 2px solid var(--bs-primary-color);
+    border-radius: 100%;
+    margin-top: -40px;
+}
+.review-card > p{
+    color: var(--bs-primary-color);
+    margin-top: 20px;
+}
+.review-card > h4{
+    font-size: 20px;
+    margin: 8px 0px;
+}
+.review-card > .divider{
+    height: 1.2px;
+    width: 70%;
+    margin: 10px 0px;
+    background-color: grey;
+}
+.golden{
+    color: var(--bs-golden);
+}
+.space{
+    height: 200px;
+}
+/* /////////////////////////////// Designing of Listing section ////////////////////////// */
+
+/* /////////////////////////////// Designing of Offer section ////////////////////////// */
+.offer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 8%;
+
+}
+.container-offer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 200px;
+    width: 83.5%;
+    background-color: var(--bs-primary-color);
+}
+.container-offer > h1 {
+    color: white;
+    width: 50%;
+}
+.offer-image{
+    background-image: url('/assets/images/offer_image.webp');
+    background-size: cover;
+    background-position: 0 -10px;
+    width: 25%;
+    height: 100%;
+}
+.offer-right{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    color: white;
+}
+.offer-button{
+    display: flex;
+    align-items: center;
+}
+.offer-button > .offer-btn{
+    font-size: 14px;
+    height: 55px;
+    width: 200px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    background-color: #151c26;
+}
+/* /////////////////////////////// Designing of Offer section ////////////////////////// */
+
+/* /////////////////////////////// Designing of More listing section ////////////////////////// */
+.more-listing{
+    margin-top: 6%;
+}
+.more-lstng-top-head{
+    text-align: center;
+}
+.more-lstng-top-head > p{
+    font-size: 20px;
+    color: var(--bs-primary-color);
+}
+.more-lstng-top-head > h1{
+    font-size: 60px;
+    color: rgba(0, 0, 0, 0.8);
+}
+.lstng-review{
+    display: grid;
+    grid-template-columns: repeat(4,300px);
+    grid-template-rows: repeat(2,480px);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    justify-content: center;
+    margin-top: 6%;
+}
+/* /////////////////////////////// Designing of More listing section ////////////////////////// */
+
+/* /////////////////////////////// Designing of Welcome section ////////////////////////// */
+.welcome-section{
+    height: 80vh;
+    margin-top: 8%;
+    background-color: white;
+}
+.container-welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.image-welcome{
+    background-image: url('/assets/images/welcome-tower.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 32%;
+    height: 100%;
+}
+.welcome-right{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    height: 70%;
+    width: 42%;
+}
+.welcome-right > .welcome-right-top > p{
+    font-size: 18px;
+    color: var(--bs-primary-color);
+}
+.welcome-right > .welcome-right-top > h1{
+    font-size: 45px;
+    margin: 2% 0;
+}
+.welcome-right > .welcome-right-top > span{
+    color: gray;
+}
+.directory{
+    display: flex;
+    justify-content: space-evenly;
+}
+.direct-box{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 10px;
+    height: 140px;
+    width: 140px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.direct-box > h1{
+    font-size: 35px;
+}
+.direct-box > p{
+    color: var(--bs-primary-color);
+}
+/* /////////////////////////////// Designing of Welcome section ////////////////////////// */
+
+/* /////////////////////////////// Designing of Footer  ////////////////////////// */
+.site-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    color: var(--bs-secondary-color);
+    background-color: var(--bs-dark);
+}
+.container-footer{  
+    display: flex;
+    flex-flow: column ;
+    justify-content: space-around;
+    padding-top: 2%;
+    height: 100%;
+    width: 50%;
+}
+.footer-form{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.footer-form > form{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.inputs{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-input{
+    text-align: center;
+    font-size: 14px;
+    height: 40px;
+    width: 200px;
+}
+
+/* /////////////////////////////// Designing of Footer  ////////////////////////// */
